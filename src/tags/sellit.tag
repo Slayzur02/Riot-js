@@ -1,4 +1,76 @@
 <sellit>
+	<!-- <div class="Modal fixed w-full bg-cover flex flex-col items-center text-center py-2" style=" min-height: 110vh; background:rgba(43,43,43,0.9); z-index:2; visibility: hidden;
+" 
+		onclick=
+		"if (!document.getElementsByClassName('Inside-modal')[0].contains(event.target)) {
+		//document.getElementsByClassName('Modal')[0].style.visibility='hidden';
+		}"
+		>
+		<div class="Inside-modal rounded shadow-md flex-grow m-8 bg-white md:w-3/5 md:m-0" style = "z-index:999;">
+					<div class=" bg-cover w-full bg-center h-56" style= "background-image:
+                     url('images/Puzzles.jpg'); ">
+  					</div>
+				  	<div class=" py-4 ">
+					    <div class="font-bold text-xl m-1">The Problem</div>
+						<p class=" text-left px-5" >
+						Alias culpa at impedit consequuntur dolore, sed. Et harum porro numquam illo, nulla quae reiciendis eveniet rerum itaque a iure, corrupti veniam ducimus explicabo. Atque reprehenderit modi minima, libero aliquid.
+						Voluptate, aliquid obcaecati consequatur praesentium atque odit, nesciunt quia est minus animi distinctio dignissimos eius omnis nisi magnam eum, alias mollitia optio, corrupti error maxime repudiandae. Dolorum totam ullam ipsum?
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi debitis fuga tempora quis, dolores, consequuntur magnam? Quae deserunt asperiores quos, ea quod rerum officiis, officia ipsum! Consequatur eligendi rerum illo.
+						Et officia ab sit eveniet obcaecati temporibus dolorum laudantium molestias, maxime mollitia perspiciatis vel omnis doloribus, vero! Error, assumenda quibusdam natus, aspernatur sapiente possimus earum sint, ea maxime dolore, laboriosam.
+						Alias culpa at impedit consequuntur dolore, sed. Et harum porro numquam illo, nulla quae reiciendis eveniet rerum itaque a iure, corrupti veniam ducimus explicabo. Atque reprehenderit modi minima, libero aliquid.
+						Voluptate, aliquid obcaecati consequatur praesentium atque odit, nesciunt quia est minus animi distinctio dignissimos eius omnis nisi magnam eum, alias mollitia optio, corrupti error maxime repudiandae. Dolorum totam ullam ipsum?
+						</p>
+					</div>
+					<button class=" text-grey-400 bg-red-400 px-4 py-2 rounded-lg" 
+					onclick="document.getElementsByClassName('Modal')[0].style.visibility='hidden'">Exit</button>
+				</div>
+	</div> -->
+	<div class="Modal" style = "
+position: fixed;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+justify-content: center;
+margin-top: -104px;
+background:rgba(43,43,43,0.9); 
+z-index:2;
+visibility:hidden;
+	">
+		<div class="inside-modal" 
+		style = "
+width: 400px;
+height: 300px;
+background-color: white;
+border: 1px solid #7f8c8d;
+border-radius: 7px;
+display: flex;
+flex-direction: column;
+		">
+		<span style = "
+		color: #48dbfb;
+		margin-top: 50px;
+		">
+			<i class="far fa-check-circle fa-5x"></i>
+		</span>
+		<h2>Your upload was successful</h2>
+		<button style = "
+		width: 100px;
+		height: 50px;
+		border-radius: 20px;
+		background: #48dbfb;
+		color:white ;
+		align-self: center;
+		justify-content: center;
+		border:none;
+		font-size: 17px;
+		"
+		onclick="document.getElementsByClassName('Modal')[0].style.visibility='hidden'">Back</button>
+		</div>
+	</div>
 	<div style="
 		width: 100%;
 		text-align: center;
@@ -141,7 +213,7 @@
 		font-size: 20px;
 		'>
 					Title
-					<input id='title-info' type="text" placeholder =" Enter the description" style = '
+					<input id='title-info' type="text" placeholder =" Enter the title" style = '
 				margin: 1px 0px 30px 0px;
 				border-radius: 5px;
 				width: 500px;
@@ -149,8 +221,8 @@
 				font-size: 20px;
 				border: solid 1px #7f8c8d;
 					'>
-					Price(vnđ)
-					<input id ='price-info' type="text" placeholder =" Enter the description" style = '
+					Price(thousand vnđ)
+					<input id ='price-info' type="text" placeholder =" Enter the price" style = '
 				margin: 1px 0px 30px 0px;
 				border-radius: 5px;
 				width: 500px;
@@ -158,6 +230,51 @@
 				font-size: 20px;
 				border: solid 1px #7f8c8d;
 					'>
+					Phone number 
+					<input id ='contact-info' type="text" placeholder =" Enter your number" style = '
+				margin: 1px 0px 30px 0px;
+				border-radius: 5px;
+				width: 500px;
+				height: 40px;
+				font-size: 20px;
+				border: solid 1px #7f8c8d;
+					'>
+
+					Choose category
+					<select id='category-upload' style = "
+					width: 500px;
+					height: 40px;
+					-webkit-appearance: button;
+				    -moz-appearance: button;
+				    -webkit-user-select: none;
+				    -moz-user-select: none;
+				    -webkit-padding-end: 20px;
+				    -moz-padding-end: 20px;
+				    -webkit-padding-start: 2px;
+				    -moz-padding-start: 2px;
+				    background-color: #2b2b2b
+				    background-position: center right;
+				    background-repeat: no-repeat;
+				    border: 1px solid #7f8c8d;
+				    border-radius: 5px;
+				    font-size: inherit;
+				    margin: 5px 0px 40px 0px;
+				    overflow: hidden;
+				    padding-top: 2px;
+				    padding-bottom: 2px;
+				    text-overflow: ellipsis;
+				    white-space: nowrap;
+				}
+					">
+					  <option value="Girls" style = "
+						font-size: 25px;
+						color: #48dbfb;
+					  ">Girls</option>
+					  <option value="Boys">Boys</option>
+					  <option value="Undefined">Undefined</option>
+
+					</select>
+
 					Upload your image here (one only)
 					<div id = "image-upload" style = "
 						display: flex;
@@ -219,7 +336,8 @@
 				text-align: center;
 				justify-content: center;
 				align-items: center;
-				align-self: center
+				align-self: center;
+				margin-top: 10px
 		'>
 				SELL IT
 		</div>
