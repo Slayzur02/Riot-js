@@ -7,7 +7,7 @@ justify-content: space-between;
 
 	">
 	<div style = "
-background-image: url(../../src/images/aaron-burden-123584-unsplash.jpg );
+background-image: url(../../src/images/tony-lee-1655325-unsplash.jpg );
 width: 390px;
 height: 300px;
 background-size: cover;
@@ -16,7 +16,7 @@ border-radius: 20px;
 margin: 20px;
 	"></div>
 	<div style = "
-background-image: url(../../src/images/artem-riasnianskyi-1342281-unsplash.jpg );
+background-image: url(../../src/images/stacked-books.jpg);
 width: 390px;
 height: 300px;
 background-size: cover;
@@ -25,7 +25,7 @@ border-radius: 20px;
 margin: 20px;
 	"></div>
 	<div style = "
-background-image: url(../../src/images/malvestida-magazine-1378326-unsplash.jpg );
+background-image: url(../../src/images/twk-tt-1656994-unsplash.jpg);
 width: 390px;
 height: 300px;
 background-size: cover;
@@ -116,7 +116,6 @@ margin-right: 40px;
 				    font-weight: 100;
 				    margin-top: -12px;
 				    display: flex;
-
 				}
 					">
 						<div id = 'left-arrow'style = "

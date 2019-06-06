@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./index.css">
+	<link rel="stylesheet" type="text/css" href="../src/index.css">
 	<title>Code Camp Starter Pack</title>
 	<script src="https://kit.fontawesome.com/6edce364b3.js"></script>
 </head>
@@ -19,6 +19,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		-moz-box-shadow: 0 0 10px #ccc;
+		-webkit-box-shadow: 0 0 10px #ccc;
+		box-shadow: 0 0 10px #ccc;
+
 	">
 		<div style = "
 		display: flex; 
@@ -31,17 +35,15 @@
 		<div style = "
 			display: flex; 
 		">
-			<a href style = 
+			<a id='buy-it-page' href='/buyit' style = 
 			"padding: 15px;
 			font-size: 17px;
-			border-bottom: 0px solid #48dbfb;
-			border-radius: 1px;
+			border-radius: 3px;
 			">Buy it</a>
-			<a   href='/sellit' style = 
+			<a id='sell-it-page'  href='/sellit' style = 
 			"padding: 15px;
 			font-size: 17px;
-			border-bottom: 0px solid #48dbfb;
-			border-radius: 1px;
+			border-radius: 3px;
 			">Sell it </a>
 			<a href style = 
 			"padding: 15px;
